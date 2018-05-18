@@ -9,8 +9,10 @@ use yii\widgets\LinkPager;
 <?php foreach ($countries as $country): ?>
 
 	<li>
-		<?= Html::encode("{$country->code} ({$country->name})") ?>:
-		<?= $country->population ?>
+        <?= Html::encode("{$country->code} ({$country->name})") ?>:
+        <?= $country->population ?>
+        <a href="<?= \yii\helpers\Url::to(['/country/delete','code' => $country->code]) ?>">Удалить</a>
+        <a href="<?= \yii\helpers\Url::to(['/country/update', 'code' => $country->code]) ?>">Редактировать</a>
 	</li>
 <?php endforeach; ?>
 </ul>
