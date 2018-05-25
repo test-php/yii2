@@ -9,7 +9,6 @@ class CountryForm extends Model
     public $code;
     public $name;
     public $population;
-
     public function rules()
     {
         return [
