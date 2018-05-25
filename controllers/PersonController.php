@@ -81,6 +81,5 @@ class PersonController extends Controller
              return $this->render('add', ['model' => $model]);
          }
      }	
-
-
+	
 }

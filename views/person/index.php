@@ -6,7 +6,7 @@ use yii\helpers\Url;
 ?>
 
 <h1>Persons</h1>
-<a href="<?= Url::to(['/person/add']); ?>">добавить</a>
+<a href="<?= Url::to(['person/add']); ?>">добавить</a>
 <ul>
 <?php foreach ($persons as $person): ?>
 
